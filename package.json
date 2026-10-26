@@ -1,0 +1,34 @@
+{
+  "name": "split-bill",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "typecheck": "next typegen && tsc --noEmit",
+    "check:docs": "bash scripts/harness/check-docs.sh",
+    "test:harness": "bash scripts/harness/check-docs.test.sh && bash scripts/harness/notify.test.sh && bash scripts/harness/drift-scan.test.sh && bash scripts/harness/stack-adapter.test.sh",
+    "check:secrets": "bash scripts/harness/check-secrets.sh",
+    "check": "npm run check:secrets && npm run lint && npm run typecheck && npm run check:docs && npm run test:harness"
+  },
+  "dependencies": {
+    "next": "16.4.3",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@secretlint/secretlint-rule-pattern": "^13.0.7",
+    "@secretlint/secretlint-rule-preset-recommend": "^13.0.7",
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.3",
+    "secretlint": "^13.0.7",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
