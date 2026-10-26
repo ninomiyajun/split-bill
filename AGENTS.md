@@ -34,10 +34,11 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 | 何を確かめるか | コマンド |
 |---|---|
-| 全部（手元で流す。PR の CI で、失敗すると PR が失敗になるのは、文書の検査、秘匿値の検査、検査の試験のうち 3 本だけで、lint と型の検査は PR の合否に含まれない。定期の走査は対象のパスを変える PR で lint と型も流すが、失敗を報告に残すだけで PR を失敗にしない） | `npm run check` |
+| 全部（手元で流す。PR の CI で、失敗すると PR が失敗になるのは、文書の検査、秘匿値の検査、検査の試験のうち 3 本と、`app-checks` の lint・型の検査・依存の向きの検査・試験である。段の読み取りの試験は PR の CI で流さない。定期の走査は対象のパスを変える PR で検査の一式も流すが、失敗を報告に残すだけで PR を失敗にしない） | `npm run check` |
 | lint | `npm run lint` |
 | 型 | `npm run typecheck` |
-| 試験 | なし |
+| 試験 | `npm run test` |
+| 依存の向き（`ARCHITECTURE.md` の「依存の向き」の規則） | `npm run check:deps` |
 | 文書（必須のファイル、CLAUDE.md、地図、リンク、目録、行数、ARCHITECTURE.md に書いたパス、計画の必須の節、受け入れ確認の記録、製品の仕様の目録と状態、古い計画、検査の由来の記録、写しの中身） | `npm run check:docs` |
 | 検査の試験（`check-docs.sh` の検査と設定と追加の検査の口、早期通知 `notify.sh`、定期の走査 `drift-scan.sh`、段の読み取り `stack-adapter.sh` の 4 本の試験） | `npm run test:harness` |
 | 秘匿値（作業ツリーの、コミットする全ファイル） | `npm run check:secrets` |
@@ -65,6 +66,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 | 検査 | `scripts/harness/` | 検査を足すか変えるとき（本体は写しなので手で変えない。専用の検査は同じ置き場の checks.d に置く） |
 | 検査（CI の設定） | `.github/workflows/` | CI の検査を足すか変えるとき |
 | モジュールのひな形 | `templates/module/` | 新しいモジュールを足すとき |
+| 検査（依存の向き） | `.dependency-cruiser.cjs` | 層の間の依存の規則を足すか変えるとき（流すコマンドは、検査のコマンドの表の依存の向きの行） |
 | 検査（定期の走査） | `.github/workflows/drift-scan.yml` | 定期の走査（`scripts/harness/drift-scan.sh`）を変えるとき。段の読み取りは `scripts/harness/stack-adapter.sh` |
 
 ## 落とし穴

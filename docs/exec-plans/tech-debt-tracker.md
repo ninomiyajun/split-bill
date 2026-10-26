@@ -23,10 +23,9 @@
 
 ## 一覧
 
-次に使う識別子: TD-4
+次に使う識別子: TD-5
 
 | 識別子 | 見つけた日 | 場所 | 内容 | 見つけた作業 |
 |---|---|---|---|---|
-| TD-1 | 2026-10-26 | `.github/workflows/harness-docs.yml` | PR の CI で、失敗すると PR が失敗になるのは、文書の検査、秘匿値の検査（harness-secrets.yml）、検査の試験のうち 3 本（check-docs・notify・drift-scan。stack-adapter の試験は流さない）だけで、lint と型の検査は PR の合否に含まれない。drift-scan.yml は、対象のパスを変える PR で lint と型も流すが、失敗を報告に残すだけで成功で終わる。harness-docs.yml の冒頭の注釈は lint と型を「既存の CI が受け持つ」と書くが、その CI は無い。そのため、手元で `npm run check` を流さなかった変更も PR の CI を通ってしまう。層を分ける検査を入れる設計で、lint と型と試験を流す CI を足すかを決める | 骨組みとハーネスの導入の PR |
-| TD-2 | 2026-10-26 | `templates/module/example.test.ts` | ひな形の試験は `node:test` で書いてあり、どの検査も流していない。後で vitest などの試験の道具を入れると、既定の対象（`**/*.test.ts`）に入り、失敗するか正しく動かない。試験の道具を決める設計で、`templates/` を対象から外す | 骨組みとハーネスの導入の PR |
 | TD-3 | 2026-10-26 | `scripts/harness/check-secrets.mjs` | コミットのメッセージ、タグの注釈、`.secretlintrc.json` は、secretlint の規則ではなく、代表的な鍵の形を探す 9 個の正規表現（`SIMPLE_PATTERNS`）だけで調べる。そのため、パスワード入りの URL などは、ファイルの中身にあれば見つかるが、コミットのメッセージにあると見つからない。このファイルはひな形の写しで手で変えないので、ひな形の側で、これらの文字列にも同じ設定の secretlint を適用するよう直し、写しを更新する | 骨組みとハーネスの導入の PR |
+| TD-4 | 2026-10-26 | `.github/workflows/harness-docs.yml` | PR の CI は、検査の試験のうち check-docs・notify・drift-scan の 3 本だけを流し、段の読み取りの試験 `scripts/harness/stack-adapter.test.sh` を流さない（手元の `npm run test:harness` は 4 本とも流す）。そのため、段の読み取りの部品を壊した変更も PR の CI を通ってしまう。このファイルはひな形から敷いたもので、lint・型・依存の向き・試験は `app-checks.yml` が受け持つようになったが、この 1 本は残る。ひな形の側で 4 本目を足すか、このプロジェクトの CI に足すかを決める | 2026-10-26-even-split.md |
