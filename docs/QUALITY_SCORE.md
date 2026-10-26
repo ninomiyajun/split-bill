@@ -7,7 +7,8 @@
 | 目標 | 測る項目 | 確かめ方 | 検査の識別子 |
 |---|---|---|---|
 | 文書が実物と合っている | 必須のファイル、地図、リンク、目録の不整合（0 を保つ） | `npm run check:docs` | - |
-| [NEEDS CLARIFICATION: このプロジェクトで守る品質の目標] | [NEEDS CLARIFICATION: 測る項目] | [NEEDS CLARIFICATION: 確かめるコマンドか方法] | - |
+| 層の間の依存が `ARCHITECTURE.md` の「依存の向き」の規則に従う | 依存の規則の違反の数（0 を保つ） | `npm run check:deps` | `check:deps` |
+| 割り勘の計算と入力の判定が仕様どおりである | 計算の層の単体試験の失敗の数（0 を保つ） | `npm run test` | `test` |
 
 検査の識別子は、定期の走査（`scripts/harness/drift-scan.sh`）が読む検査の一式の段の名前（バッククォートで囲み、
 コンマで区切る）。段が無い目標は `-` と書く。

@@ -114,3 +114,4 @@
 
 | 略号 | 仕様 | 題 | 状態 |
 |---|---|---|---|
+| SPLIT | [even-split.md](even-split.md) | 合計の金額と人数から 1 人あたりの額を出す | approved |

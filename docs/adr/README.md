@@ -20,3 +20,6 @@ ADR を足したら、この表に行を足す（`npm run check:docs` が漏れ�
 | 番号 | 題 | 状態 |
 |---|---|---|
 | [0001](0001-allow-importing-ts-extensions.md) | 型の検査でモジュールのひな形も調べるため、拡張子つきの import を許す | 採用 |
+| [0002](0002-split-calc-and-screen-layers.md) | 計算の層と画面の層に分け、依存の向きを dependency-cruiser で確かめる | 採用 |
+| [0003](0003-use-vitest.md) | 試験の道具に vitest を使い、ひな形を対象から外す | 採用 |
+| [0004](0004-node-24-baseline.md) | Node.js は 24 系を検証の基準にし、26 系での実行も許す | 採用 |
