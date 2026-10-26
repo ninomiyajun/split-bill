@@ -702,20 +702,20 @@ module.exports = {
 | SPLIT-1 | 済 | 2026-10-26 に確かめた。`npm run test` で `src/lib/split-display.test.ts` の同じ識別子の試験が通った（全 37 件合格）。`@b4077b2` に未コミットの変更を含めて確かめた |
 | SPLIT-2 | 済 | 2026-10-26 に確かめた。`npm run test` で `src/lib/split-display.test.ts` の同じ識別子の試験が通った（全 37 件合格）。`@b4077b2` に未コミットの変更を含めて確かめた |
 | SPLIT-3 | 済 | 2026-10-26 に確かめた。`npm run test` で `src/lib/split-display.test.ts` の同じ識別子の試験が通った（全 37 件合格）。`@b4077b2` に未コミットの変更を含めて確かめた |
-| SPLIT-4 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/active/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-4」の行が合格 |
+| SPLIT-4 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/completed/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-4」の行が合格 |
 | SPLIT-5 | 済 | 2026-10-26 に確かめた。`npm run test` で `src/lib/split-display.test.ts` の同じ識別子の試験が通った（全 37 件合格）。`@b4077b2` に未コミットの変更を含めて確かめた |
-| SPLIT-6 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/active/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-6」の行が合格 |
+| SPLIT-6 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/completed/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-6」の行が合格 |
 | SPLIT-7 | 済 | 2026-10-26 に確かめた。`npm run test` で `src/lib/split-display.test.ts` の同じ識別子の試験が通った（全 37 件合格）。`@b4077b2` に未コミットの変更を含めて確かめた |
 | SPLIT-8 | 済 | 2026-10-26 に確かめた。`npm run test` で `src/lib/split-display.test.ts` の同じ識別子の試験が通った（全 37 件合格）。`@b4077b2` に未コミットの変更を含めて確かめた |
-| SPLIT-9 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/active/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-9」の行が合格 |
-| SPLIT-10 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/active/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-10」の行が合格 |
-| SPLIT-11 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/active/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-11」の行が合格（`npm run build` と `npm run start` の後に、サーバーを止めて確かめた） |
-| SPLIT-12 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/active/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-12」の行が合格 |
-| SPLIT-13 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/active/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-13」の行が合格 |
-| SPLIT-14 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/active/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-14」の行が合格 |
-| SPLIT-15 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/active/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-15」の行が合格 |
-| SPLIT-16 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/active/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-16」の行が合格 |
-| SPLIT-17 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/active/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-17」の行が合格 |
+| SPLIT-9 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/completed/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-9」の行が合格 |
+| SPLIT-10 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/completed/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-10」の行が合格 |
+| SPLIT-11 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/completed/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-11」の行が合格（`npm run build` と `npm run start` の後に、サーバーを止めて確かめた） |
+| SPLIT-12 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/completed/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-12」の行が合格 |
+| SPLIT-13 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/completed/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-13」の行が合格 |
+| SPLIT-14 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/completed/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-14」の行が合格 |
+| SPLIT-15 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/completed/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-15」の行が合格 |
+| SPLIT-16 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/completed/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-16」の行が合格 |
+| SPLIT-17 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/completed/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-17」の行が合格 |
 | SPLIT-18 | 済 | 2026-10-26 に確かめた。`npm run test` で `src/lib/split-display.test.ts` の同じ識別子の試験が通った（全 37 件合格）。`@b4077b2` に未コミットの変更を含めて確かめた |
 | SPLIT-19 | 済 | 2026-10-26 に確かめた。`npm run test` で `src/lib/split-display.test.ts` の同じ識別子の試験が通った（全 37 件合格）。`@b4077b2` に未コミットの変更を含めて確かめた |
 | SPLIT-20 | 済 | 2026-10-26 に確かめた。`npm run test` で `src/lib/split-display.test.ts` の同じ識別子の試験が通った（全 37 件合格）。`@b4077b2` に未コミットの変更を含めて確かめた |
@@ -728,10 +728,10 @@ module.exports = {
 | SPLIT-27 | 済 | 2026-10-26 に確かめた。`npm run test` で `src/lib/split-display.test.ts` の同じ識別子の試験が通った（全 37 件合格）。`@b4077b2` に未コミットの変更を含めて確かめた |
 | SPLIT-28 | 済 | 2026-10-26 に確かめた。`npm run test` で `src/lib/split-display.test.ts` の同じ識別子の試験が通った（全 37 件合格）。`@b4077b2` に未コミットの変更を含めて確かめた |
 | SPLIT-29 | 済 | 2026-10-26 に確かめた。`npm run test` で `src/lib/split-display.test.ts` の同じ識別子の試験が通った（全 37 件合格）。`@b4077b2` に未コミットの変更を含めて確かめた |
-| SPLIT-30 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/active/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-30」の行が合格 |
-| V1 | 待ち | 項目: 手順 17; 外部: PR の CI のジョブがすべて成功すること |
+| SPLIT-30 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/completed/2026-10-26-even-split.acceptance.md` の実行 1 の「基準 SPLIT-30」の行が合格 |
+| V1 | 済 | 2026-10-26。手元の `npm run check`・`npm run lint`・`npm run typecheck` の終了コード 0（手順 14）。PR #2 の CI は、pull_request と push の 2 回の実行で、app-checks・check-docs・check-secrets・scan がすべて pass（まとめ役が `gh pr checks 2` で確かめた。`@452e394`）。mergeable は MERGEABLE、mergeStateStatus は CLEAN |
 | V2 | 済 | 2026-10-26 にまとめ役が確かめた。証拠の置き場: 会話の記録の subagents の下のファイル（下の 2026-10-26 の出来事の行） |
-| V3 | 待ち | 項目: 手順 17; 外部: 記録が PR の変更に含まれることを、PR の作成の後に確かめる（記録が基準ごとの合否と証拠を持つことは、2026-10-26 にまとめ役が記録の 16〜78 行目で確かめた） |
+| V3 | 済 | 2026-10-26。受け入れ確認の記録（閉じる前の置き場は `docs/exec-plans/active/`）はコミット `@452e394` に含まれ、PR #2 の変更に入っている。記録は 12 の基準ごとの合否と証拠を持つ（まとめ役が記録の 16〜78 行目で確かめた） |
 | V4 | 済 | 2026-10-26 に確かめ、実装レビューの後に規則を足して広げて確かめ直した。証拠: 進捗の 2 つの V4 の出来事の行（`npm run check:deps` の出力の要旨。広げた確かめでは 9 つの規則のすべてで 1 件以上の失敗）。`@b4077b2` に未コミットの変更を含めて確かめた |
 | 手順 1 | 済 | 2026-10-26。worktree とブランチの組、`git status --short`、Node.js v26.12.1、`npm ci`、変更の前の `npm run check` の終了コード 0 を確かめ、Next.js の説明 4 つを読んだ |
 | 手順 2 | 済 | 2026-10-26。`.nvmrc`、`engines`、`@types/node` 24.19.2。`npm run typecheck` の終了コード 0 |
@@ -747,10 +747,10 @@ module.exports = {
 | 手順 12 | 済 | 2026-10-26。`.github/workflows/app-checks.yml`、TD-1 を消して TD-4 を足した、`AGENTS.md` の「全部」の行。GitHub の上での実行は未確認（V1 で確かめる） |
 | 手順 13 | 済 | 2026-10-26。`docs/harness-log.md` に 2 行。`npm run check:docs` の終了コード 0 |
 | 手順 14 | 済 | 2026-10-26。`npm run check`・`npm run lint`・`npm run typecheck` の終了コード 0（`@b4077b2` に未コミットの変更を含めて）。実装レビューの指摘を直した後に流し直し、`npm run build` も含めて終了コード 0（試験 37 件合格）。照合の道具の不備は 0（進捗の出来事の行） |
-| 手順 15 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/active/2026-10-26-even-split.acceptance.md` の実行 1 で、判定に数える 12 の基準（SPLIT-4・6・9〜17・30）がすべて合格、全体が合格。SPLIT-26・29 は基準外の所見として、画面でも仕様どおり |
+| 手順 15 | 済 | 2026-10-26。app-evaluator の受け入れ確認の記録 `docs/exec-plans/completed/2026-10-26-even-split.acceptance.md` の実行 1 で、判定に数える 12 の基準（SPLIT-4・6・9〜17・30）がすべて合格、全体が合格。SPLIT-26・29 は基準外の所見として、画面でも仕様どおり |
 | 手順 16 | 済 | 2026-10-26。1 段目（実装・設計品質・セキュリティの点検）と 2 段目（Codex）で必須の指摘は無く、推奨と任意の 12 点を直し、その修正を実装の点検で確かめ直して指摘なし（判断の記録の 18〜20） |
-| 手順 17 | 未 | |
-| 手順 18 | 未 | |
+| 手順 17 | 済 | 2026-10-26。まとめ役がコミット `452e394` を `feat/split-calculator` に push し、PR #2（題 feat: add even bill split calculator）を作った。push の前の個人情報の走査と `bash scripts/harness/check-secrets.sh --commits` は、どちらも終了コード 0 |
+| 手順 18 | 済 | 2026-10-26。結果と振り返りの節を書き、計画と受け入れ確認の記録を `docs/exec-plans/completed/` へ移した（進捗の出来事の行） |
 
 2026-10-26: 計画を起票した。実装の変更はまだ無い。未コミットの変更は、`docs/product-specs/even-split.md`（承認済みの仕様。未追跡）、
 `docs/product-specs/README.md`（目録に SPLIT の行を足した）、この計画（未追跡）の 3 つ。
@@ -811,9 +811,12 @@ node_modules/react/index.js」「error lib-only-lib: src/lib/zz-violation-app.ts
 すべての一時のファイルと一時のディレクトリを消した後は「no dependency violations found」（終了コード 0）で、`git status --short
 --untracked-files=all` に一時のファイルが残っていないことを確かめた。
 
-2026-10-26: 受け入れ確認（手順 15）の結果。app-evaluator の記録 `docs/exec-plans/active/2026-10-26-even-split.acceptance.md` の実行 1 で、判定に数える 12 の基準（SPLIT-4・6・9〜17・30。SPLIT-11 は `npm run build` と `npm run start` の後にサーバーを止めて確かめた）がすべて合格、全体が合格で、SPLIT-26・29 も基準外の所見として画面で仕様どおりだった。
+2026-10-26: 受け入れ確認（手順 15）の結果。app-evaluator の記録 `docs/exec-plans/completed/2026-10-26-even-split.acceptance.md` の実行 1 で、判定に数える 12 の基準（SPLIT-4・6・9〜17・30。SPLIT-11 は `npm run build` と `npm run start` の後にサーバーを止めて確かめた）がすべて合格、全体が合格で、SPLIT-26・29 も基準外の所見として画面で仕様どおりだった。
 
 2026-10-26: 受け入れ確認の途中で、ブラウザの道具が本体のリポジトリの直下に一時のファイル（`.playwright-mcp/`）を書いた。worktree の中には入っていない。
+
+2026-10-26: 手順 17 と V1・V3 を済にした（まとめ役が PR #2 を作り、CI がすべて pass したことを確かめた）。計画を閉じた: 結果と振り返りの節を
+書き、計画と受け入れ確認の記録を `docs/exec-plans/active/` から `docs/exec-plans/completed/` へ移し、記録へのパスを移した後のものに直した。
 
 ## 発見
 
@@ -929,4 +932,19 @@ node_modules/react/index.js」「error lib-only-lib: src/lib/zz-violation-app.ts
 
 ## 結果と振り返り
 
-計画を閉じるときに書く。
+- 結果: 仕様 `docs/product-specs/even-split.md` の受け入れ基準 SPLIT-1〜SPLIT-30 をすべて満たした。18 の基準は計算の層の単体試験
+  （37 件、すべて合格）で、12 の基準は app-evaluator の受け入れ確認（記録の実行 1 で全体が合格）で確かめた。V1〜V4 もすべて済で、
+  不合格と対象外の項目は無い。変更はコミット `452e394`（ブランチ `feat/split-calculator`）で、PR #2 の CI はすべて pass した。
+- 入れた土台: 画面の層 `src/app/` と計算の層 `src/lib/` の 2 層、依存の向きの検査（dependency-cruiser の 9 つの規則、`npm run check:deps`）、
+  試験の道具 vitest、Node.js の 24 系の基準（`.nvmrc`）、PR の CI `app-checks`。残す価値のある設計判断は ADR 0002〜0004 に書いた
+  （判断の記録の 18〜20 の変更も、ADR 0002・0004 に反映済み）。
+- 振り返り:
+  - 依存の向きの検査は、起票の時点の 7 つの規則では、画面から計算の層の内部の関数を直接読み込むことと、`src/` の直下の層の決まって
+    いない場所を拾えなかった。実装レビューで 2 つの規則を足し、V4 をすべての規則の名前に広げた。検査を足すときは、規則ごとに失敗する
+    例を置いて確かめる形を、起票の時点から完了の条件にしておくのがよい。
+  - 早期通知は、地図に未作成のファイルのパスを書いたとき、ADR を目録より先に書いたとき、`ARCHITECTURE.md` に例として書いたファイル名を
+    パスとして読まれたときに出た。どれも、その場で文書の検査の失敗に気づけた。
+  - 受け入れ確認の途中で、ブラウザの道具が本体のリポジトリの直下に `.playwright-mcp/` を書いた。worktree の外なので変更には入らなかったが、
+    次の受け入れ確認でも同じことが起こりうる。
+  - `docs/harness-log.md` の「入れた変更」の列は、まだブランチの名前 `feat/split-calculator` のままである。手順 17 の決まりでは、PR を
+    作った後に同じ PR の中で番号（#2）に書き換える。
