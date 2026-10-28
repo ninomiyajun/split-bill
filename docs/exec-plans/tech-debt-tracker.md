@@ -27,5 +27,4 @@
 
 | 識別子 | 見つけた日 | 場所 | 内容 | 見つけた作業 |
 |---|---|---|---|---|
-| TD-3 | 2026-10-26 | `scripts/harness/check-secrets.mjs` | コミットのメッセージ、タグの注釈、`.secretlintrc.json` は、secretlint の規則ではなく、代表的な鍵の形を探す 9 個の正規表現（`SIMPLE_PATTERNS`）だけで調べる。そのため、パスワード入りの URL などは、ファイルの中身にあれば見つかるが、コミットのメッセージにあると見つからない。このファイルはひな形の写しで手で変えないので、ひな形の側で、これらの文字列にも同じ設定の secretlint を適用するよう直し、写しを更新する | 骨組みとハーネスの導入の PR |
-| TD-4 | 2026-10-26 | `.github/workflows/harness-docs.yml` | PR の CI は、検査の試験のうち check-docs・notify・drift-scan の 3 本だけを流し、段の読み取りの試験 `scripts/harness/stack-adapter.test.sh` を流さない（手元の `npm run test:harness` は 4 本とも流す）。そのため、段の読み取りの部品を壊した変更も PR の CI を通ってしまう。このファイルはひな形から敷いたもので、lint・型・依存の向き・試験は `app-checks.yml` が受け持つようになったが、この 1 本は残る。ひな形の側で 4 本目を足すか、このプロジェクトの CI に足すかを決める | 2026-10-26-even-split.md |
+| TD-3 | 2026-10-26 | `scripts/harness/check-secrets.mjs` | `.secretlintrc.json` は、作業ツリーの検査（引数なしの `scripts/harness/check-secrets.sh`）では secretlint の既定の除外に当たるので、secretlint の規則ではなく、代表的な鍵の形を探す正規表現（`SIMPLE_PATTERNS`）だけで調べる。そのため、パスワード入りの URL などをこのファイルに書くと、作業ツリーの検査では見つからない（push の前の `--commits` の検査では secretlint にも掛けるので見つかる。コミットのメッセージとタグの注釈は、規約の版 rules-2026.10.28-1 の写しから secretlint にも掛ける）。このファイルはひな形の写しで手で変えないので、ひな形の側で、作業ツリーの検査でもこのファイルに同じ設定の secretlint を適用するよう直し、写しを更新する | 骨組みとハーネスの導入の PR |

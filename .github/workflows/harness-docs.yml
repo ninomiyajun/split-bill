@@ -27,8 +27,10 @@ jobs:
           fetch-depth: 0
       - name: check-docs（文書の検査）
         run: bash scripts/harness/check-docs.sh
-      - name: test-harness（文書の検査の試験と、早期通知・定期の走査の試験）
+      # 採用した部品の試験も、この段で流す（部品が、この段の最後に行を足す）
+      - name: test-harness（文書の検査の試験と、早期通知・定期の走査の試験と、部品の試験）
         run: |
           bash scripts/harness/check-docs.test.sh
           bash scripts/harness/notify.test.sh
           bash scripts/harness/drift-scan.test.sh
+          bash scripts/harness/stack-adapter.test.sh
