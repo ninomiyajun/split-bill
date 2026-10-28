@@ -31,3 +31,4 @@
 |---|---|---|---|---|
 | `npm run check:deps`（規則 `lib-only-lib`・`lib-test-only-lib-and-vitest`・`app-only-display`・`src-only-known-layers`・`no-prod-to-test`・`no-circular`・`src-not-to-templates`・`templates-not-to-src`・`not-to-unresolvable`） | 設計で足した検査（指摘から作ったものではない）。`2026-10-26-even-split.md` の「目的」。目安の出どころの数に満たないが利用者が選んだ | `ARCHITECTURE.md` の「依存の向き」 | #2 | |
 | PR の CI `app-checks`（`npm run lint`・`npm run typecheck`・`npm run check:deps`・`npm run test`） | 設計で足した検査（指摘から作ったものではない）。技術的負債 TD-1（骨組みとハーネスの導入の PR）と `2026-10-26-even-split.md` の「目的」の判断 1。目安の出どころの数に満たないが利用者が選んだ | `AGENTS.md` の「検査のコマンド」の「全部」の行 | #2 | |
+| 検査の本体の写し（規約の版 rules-2026.10.28-1） | 規約の版の更新（rules-2026.10.25-1 → rules-2026.10.28-1） | なし | chore/harness-rules-2026.10.28-1 | |

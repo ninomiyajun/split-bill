@@ -22,6 +22,9 @@ on:
       - docs/exec-plans/tech-debt-tracker.md
       - AGENTS.md
       - package.json
+      # 走査が入れる依存の版と、公開する前の秘匿値の検査の設定
+      - package-lock.json
+      - .secretlintrc.json
 
 permissions:
   contents: read
@@ -42,7 +45,9 @@ jobs:
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version: lts/*
-          # 依存の cache は使わない（ほかのワークフローが書いた cache を、公開する前の確かめの道具に混ぜないため）
+          # 依存の cache は使わない（ほかのワークフローが書いた cache を、公開する前の確かめの道具に混ぜないため）。
+          # この入力の既定（true）では、条件によって cache を自動で使うので、明示して止める
+          package-manager-cache: false
       - name: install（インストール用のスクリプトを動かさない）
         run: npm ci --ignore-scripts
       # 走査の中で、公開してよいかの検査も行う。通らなければ報告を消して失敗するので、次の段は動かない。
