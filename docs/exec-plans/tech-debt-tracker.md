@@ -27,4 +27,3 @@
 
 | 識別子 | 見つけた日 | 場所 | 内容 | 見つけた作業 |
 |---|---|---|---|---|
-| TD-3 | 2026-10-26 | `scripts/harness/check-secrets.mjs` | `.secretlintrc.json` は、作業ツリーの検査（引数なしの `scripts/harness/check-secrets.sh`）では secretlint の既定の除外に当たるので、secretlint の規則ではなく、代表的な鍵の形を探す正規表現（`SIMPLE_PATTERNS`）だけで調べる。そのため、パスワード入りの URL などをこのファイルに書くと、作業ツリーの検査では見つからない（push の前の `--commits` の検査では secretlint にも掛けるので見つかる。コミットのメッセージとタグの注釈は、規約の版 rules-2026.10.28-1 の写しから secretlint にも掛ける）。このファイルはひな形の写しで手で変えないので、ひな形の側で、作業ツリーの検査でもこのファイルに同じ設定の secretlint を適用するよう直し、写しを更新する | 骨組みとハーネスの導入の PR |
