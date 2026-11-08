@@ -5,7 +5,7 @@
 # - build の context からファイルを読まない（context からの COPY、ADD、from の無い RUN --mount=type=bind を書かない）。
 #   ソースは compose.override.yaml の bind か、エージェントの実行環境が重ねる作業場所から入る。
 # - 先頭の syntax の指示は書かない（build の frontend に外部のイメージを使わせないため）。
-FROM node:24.22.2-bookworm-slim@sha256:01d566e8d94d8c619591d78652babfccd3c6992a3dffa9ed5ab39e11cf6c70e9 AS base
+FROM node:26.13.0-bookworm-slim@sha256:add5c17c14752c54d2f3d519ec46a3815684d41c33f198bcb09fb998f7dcbf68 AS base
 
 FROM base AS dev
 # git は、検査のスクリプト（秘匿値の検査など）が使う。node_modules と .next は名前付き volume の置き場で、空の volume が
