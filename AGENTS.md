@@ -58,6 +58,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 | 製品の仕様（書式と目録） | `docs/product-specs/README.md` | 新しい機能や画面の仕様を書くとき、仕様を引く計画を書くとき・確かめるとき |
 | 計画の書式 | `docs/PLANS.md` | 計画を書くとき、計画を読むとき |
 | アプリの起動の手順 | `.claude/skills/run-split-bill/SKILL.md` | アプリを起動して画面を確かめるとき（受け入れ確認を含む） |
+| 開発環境の定義（Docker） | `compose.yaml` | Docker で開発環境を起動するとき、開発環境を変えるとき（人の作業ツリーの bind は `compose.override.yaml`、イメージは `Dockerfile` に書く） |
 | 進行中の計画 | `docs/exec-plans/active/` | 作業を再開するとき |
 | 完了した計画 | `docs/exec-plans/completed/` | 過去の作業の経緯を知りたいとき |
 | 技術的負債の一覧 | `docs/exec-plans/tech-debt-tracker.md` | 作業の範囲外の問題を見つけたとき、文書を点検するとき |
@@ -73,3 +74,6 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 - Claude Code は、`CLAUDE.md` があるとこのファイルを自分からは読まない。そのため `CLAUDE.md` に `@AGENTS.md` だけの行を
   置いている。この行を消さず、指示はこのファイルに書く（`npm run check:docs` が、`@AGENTS.md` だけの行があることを確かめる）。
+- git の worktree で `docker compose` を使うと、worktree の `.git` はホストの本体の gitdir を指すファイルで、その先は
+  コンテナの中から見えない。そのため、git を使う検査（`npm run check:secrets` と、それを含む `npm run check`）が
+  コンテナの中で落ちる。コンテナで検査を流すときは、通常の clone で行う。
