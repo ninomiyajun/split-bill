@@ -1,0 +1,7 @@
+# Dependabot の版の更新。Dockerfile の土台のイメージ（タグとダイジェストで固定）の更新を取り込むため
+version: 2
+updates:
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"

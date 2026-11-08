@@ -23,7 +23,8 @@
 
 ## 一覧
 
-次に使う識別子: TD-5
+次に使う識別子: TD-6
 
 | 識別子 | 見つけた日 | 場所 | 内容 | 見つけた作業 |
 |---|---|---|---|---|
+| TD-5 | 2026-11-09 | `Dockerfile`、`compose.yaml`、`compose.override.yaml`、`AGENTS.md` | 開発環境の定義の検査の写し（`scripts/harness/check-compose.sh`・`check-compose.mjs`・`check-compose.test.sh`）がまだ無く、3 つの定義ファイルの冒頭の注釈が指す検査のコマンドは実行できない。部品 node-compose を含む規約の版の印ができたら、規約のリポジトリの敷設の手順（project-harness-init）の `scripts/harness-copies.sh` の `update` に `--add-part node-compose` を付けて写しを足し、あわせて `AGENTS.md` の検査のコマンドの表に開発環境の定義の検査と試験の 2 行を、文書の地図の「開発環境の定義（Docker）」の行の読む条件に「変えたら、検査のコマンドの表の開発環境の定義の検査を通す」を、手で戻す | ブランチ feat/docker-dev-env（PR は未作成） |
