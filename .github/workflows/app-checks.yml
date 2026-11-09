@@ -1,4 +1,5 @@
-# アプリの検査。lint、型の検査、依存の向きの検査（dependency-cruiser）、単体試験（vitest）を流す。
+# アプリの検査。開発環境の定義の検査（check-compose.sh）、lint、型の検査、依存の向きの検査（dependency-cruiser）、
+# 単体試験（vitest）を流す。
 # 秘匿値の検査は harness-secrets.yml が、文書の検査と検査の試験は harness-docs.yml が受け持つ（このファイルには足さない）。
 # マージの必須条件にする設定は、GitHub のリポジトリの設定（ブランチの保護）で行う。アクションはコミットの SHA で固定し、
 # 版の名前をコメントに残す。Node.js の版は、検証の基準の .nvmrc から読む。
@@ -32,6 +33,9 @@ jobs:
       # 依存のインストール用のスクリプト（preinstall など）を動かさずに入れる
       - name: install（インストール用のスクリプトを動かさない）
         run: npm ci --ignore-scripts
+      # 開発環境の定義（compose.yaml・compose.override.yaml・Dockerfile）の静的な検査。yaml のパッケージを使うので npm ci の後
+      - name: check:compose（開発環境の定義の検査）
+        run: npm run check:compose
       - name: lint
         run: npm run lint
       - name: typecheck
