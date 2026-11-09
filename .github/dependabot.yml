@@ -5,3 +5,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    ignore:
+      # Node のメジャーの版は .nvmrc と一緒に人が上げる（土台のイメージだけが先に上がり、版が食い違うのを防ぐ）
+      - dependency-name: "node"
+        update-types: ["version-update:semver-major"]
