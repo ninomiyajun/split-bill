@@ -34,15 +34,17 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 | 何を確かめるか | コマンド |
 |---|---|
-| 全部（手元で流す。PR の CI で、失敗すると PR が失敗になるのは、文書の検査、秘匿値の検査、検査の試験のうち 3 本と、`app-checks` の lint・型の検査・依存の向きの検査・試験である。段の読み取りの試験は PR の CI で流さない。定期の走査は対象のパスを変える PR で検査の一式も流すが、失敗を報告に残すだけで PR を失敗にしない） | `npm run check` |
+| 全部（手元で流す。PR の CI で、失敗すると PR が失敗になるのは、文書の検査、秘匿値の検査、検査の試験のうち 4 本と、`app-checks` の開発環境の定義の検査・lint・型の検査・依存の向きの検査・試験である。開発環境の定義の検査の試験は PR の CI で流さない。定期の走査は対象のパスを変える PR で検査の一式も流すが、失敗を報告に残すだけで PR を失敗にしない） | `npm run check` |
 | lint | `npm run lint` |
 | 型 | `npm run typecheck` |
 | 試験 | `npm run test` |
 | 依存の向き（`ARCHITECTURE.md` の「依存の向き」の規則） | `npm run check:deps` |
 | 文書（必須のファイル、CLAUDE.md、地図、リンク、目録、行数、ARCHITECTURE.md に書いたパス、計画の必須の節、受け入れ確認の記録、製品の仕様の目録と状態、古い計画、検査の由来の記録、写しの中身） | `npm run check:docs` |
-| 検査の試験（`check-docs.sh` の検査と設定と追加の検査の口、早期通知 `notify.sh`、定期の走査 `drift-scan.sh`、段の読み取り `stack-adapter.sh` の 4 本の試験） | `npm run test:harness` |
+| 検査の試験（`check-docs.sh` の検査と設定と追加の検査の口、早期通知 `notify.sh`、定期の走査 `drift-scan.sh`、段の読み取り `stack-adapter.sh`、開発環境の定義の検査 `check-compose.sh` の 5 本の試験） | `npm run test:harness` |
 | 秘匿値（作業ツリーの、コミットする全ファイル） | `npm run check:secrets` |
 | 秘匿値（push する範囲の各コミットの中身） | `bash scripts/harness/check-secrets.sh --commits` |
+| 開発環境の定義（`compose.yaml`・`compose.override.yaml`・`Dockerfile` の、ホストのパスの bind・値の埋め込み・build の context の読み込みなどの拒否） | `bash scripts/harness/check-compose.sh` |
+| 開発環境の定義の検査の試験 | `bash scripts/harness/check-compose.test.sh` |
 
 リンクの検査が見るのは、インラインのリンクと画像（角括弧の文字の直後に、丸括弧で囲んだ先を続ける形）で、先に空白も
 `)` も含まないものだけである。参照形式のリンク、山括弧で囲んだ先、タイトル付きの先、自動リンク、HTML の a 要素は検査しないので、
@@ -58,7 +60,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 | 製品の仕様（書式と目録） | `docs/product-specs/README.md` | 新しい機能や画面の仕様を書くとき、仕様を引く計画を書くとき・確かめるとき |
 | 計画の書式 | `docs/PLANS.md` | 計画を書くとき、計画を読むとき |
 | アプリの起動の手順 | `.claude/skills/run-split-bill/SKILL.md` | アプリを起動して画面を確かめるとき（受け入れ確認を含む） |
-| 開発環境の定義（Docker） | `compose.yaml` | Docker で開発環境を起動するとき、開発環境を変えるとき（人の作業ツリーの bind は `compose.override.yaml`、イメージは `Dockerfile` に書く） |
+| 開発環境の定義（Docker） | `compose.yaml` | Docker で開発環境を起動するとき、開発環境を変えるとき（人の作業ツリーの bind は `compose.override.yaml`、イメージは `Dockerfile` に書く。変えたら、検査のコマンドの表の開発環境の定義の検査を通す） |
 | 進行中の計画 | `docs/exec-plans/active/` | 作業を再開するとき |
 | 完了した計画 | `docs/exec-plans/completed/` | 過去の作業の経緯を知りたいとき |
 | 技術的負債の一覧 | `docs/exec-plans/tech-debt-tracker.md` | 作業の範囲外の問題を見つけたとき、文書を点検するとき |

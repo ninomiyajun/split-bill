@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // harness-copy: source=home/agents/skills/project-harness-init/assets/parts/node-secrets/assets/check-secrets.mjs
-// harness-copy: version=rules-2026.11.05-1
+// harness-copy: version=rules-2026.11.08-1
 // harness-copy: sha256=d9e553d8e8f129c853c333e65bd4dae912539cd613a70edbb13c93bf014e4d71
 // harness-copy: この 4 行と本体は手で変えない。正本を直して project-harness-init の「導入済みのプロジェクトの更新」で置き換える
 // 秘匿値の検査の本体。入口は scripts/harness/check-secrets.sh（作業ツリーは引数なし、push する範囲は --commits）。
