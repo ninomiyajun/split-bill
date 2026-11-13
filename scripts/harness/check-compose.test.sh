@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # harness-copy: source=home/agents/skills/project-harness-init/assets/parts/node-compose/assets/check-compose.test.sh
-# harness-copy: version=rules-2026.11.10-1
+# harness-copy: version=rules-2026.11.13-1
 # harness-copy: sha256=4e4c7a81f53f44a91b0615f73372caa79e503c0da1ffc60a09d52669e9d99174
 # harness-copy: この 4 行と本体は手で変えない。正本を直して project-harness-init の「導入済みのプロジェクトの更新」で置き換える
 # check-compose.sh の試験。Docker の CLI と daemon は使わない（node と node_modules の yaml だけを使う）。
