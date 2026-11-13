@@ -1,5 +1,5 @@
 // harness-copy: source=home/agents/skills/project-harness-init/assets/parts/node-compose/assets/check-compose.mjs
-// harness-copy: version=rules-2026.11.10-1
+// harness-copy: version=rules-2026.11.13-1
 // harness-copy: sha256=5f1118304f76989067e6619c6d42493547bfceb9f730c98102166dfa3f52a99a
 // harness-copy: この 4 行と本体は手で変えない。正本を直して project-harness-init の「導入済みのプロジェクトの更新」で置き換える
 // アプリの開発環境の定義（compose.yaml・compose.override.yaml・Dockerfile）の静的な検査の本体。
